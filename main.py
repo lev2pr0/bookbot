@@ -1,9 +1,12 @@
-def get_boot_text(filepath):
-
-# To add function to return info for main
+def get_book_text(filepath):
+    file_contents = str()
+    with open(filepath) as f:
+        file_contents = f.read()
+    return file_contents
 
 def main():
-
-# To call functions here once complete with above
+    filepath = "./books/frankenstein.txt"
+    file_contents = get_book_text(filepath)
+    print(file_contents)
 
 main()
