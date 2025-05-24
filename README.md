@@ -1,4 +1,4 @@
-# Bookbot
+# Bookbot 📚
 
 ## Purpose
 
