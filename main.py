@@ -1,3 +1,6 @@
+# Import sys module
+from sys import argv
+
 # Import from stats.py
 from stats import get_word_count,get_char_count,sort_char
 
@@ -9,7 +12,7 @@ def get_book_text(filepath):
     return file_contents
 
 def main():
-    filepath = "./books/frankenstein.txt"
+    filepath = argv[1]
 
     # Get book content
     file_contents = get_book_text(filepath)
@@ -21,15 +24,19 @@ def main():
 
     # Print report with excluding non-alphabetic characters from count
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {filepath}...")  # Fix: Dynamically include filepath
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
 
     for count in results:
-        if str.isalpha(count["char"]) == True:
-            print(f"{count["char"]}: {count["num"]}")
+        if str.isalpha(count["char"]):  # Fix: Simplify condition and avoid redundant comparison
+            print(f"{count['char']}: {count['num']}")  # Fix: Use single quotes inside f-string
         else:
             pass
 
-main()
+
+if len(argv) < 2:
+    print("Usage: python3 main.py <path_to_book>")
+else:
+    main()
