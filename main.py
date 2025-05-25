@@ -35,7 +35,7 @@ def main():
         else:
             pass
 
-
+# Checks sys.argv for two entries before run. Otherwise, prints usage details and exits.
 if len(argv) < 2:
     print("Usage: python3 main.py <path_to_book>")
     exit(1)
