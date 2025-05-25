@@ -68,4 +68,4 @@ z: 235
 ## Notes
 
 - Requires Python 3
-- If not using the ``./books`` path, then you must enter relative path to text file 
+- If not using the ``./books`` path, then you must use relative path to text file 
