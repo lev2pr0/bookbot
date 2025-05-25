@@ -14,7 +14,7 @@ For more, see [Boot.dev Achievements](https://github.com/lev2pr0/bootdotdevAchie
 ## Installation
 
 1. Fork from the ``main`` branch
-2. Download and open .zip of your forked repository
+2. Download and open .zip from your forked repository
 3. Add books as .txt files to ``./books`` folder
 
 ## Parameter
