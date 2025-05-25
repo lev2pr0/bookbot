@@ -23,7 +23,7 @@ For more, see [Boot.dev Achievements](https://github.com/lev2pr0/bootdotdevAchie
 python3 main.py <path_to_book>
 ```
 
-## Example of Report
+## Example
 
 ```python
 python3 main.py books/frankenstein.txt
