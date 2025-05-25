@@ -24,19 +24,20 @@ def main():
 
     # Print report with excluding non-alphabetic characters from count
     print("============ BOOKBOT ============")
-    print(f"Analyzing book found at {filepath}...")  # Fix: Dynamically include filepath
+    print(f"Analyzing book found at {filepath}...")
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
 
     for count in results:
-        if str.isalpha(count["char"]):  # Fix: Simplify condition and avoid redundant comparison
-            print(f"{count['char']}: {count['num']}")  # Fix: Use single quotes inside f-string
+        if str.isalpha(count["char"]):
+            print(f"{count['char']}: {count['num']}")
         else:
             pass
 
 
 if len(argv) < 2:
     print("Usage: python3 main.py <path_to_book>")
+    exit(1)
 else:
     main()
