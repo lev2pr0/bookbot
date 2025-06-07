@@ -4,9 +4,9 @@
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project! This is a Python program that analyzes novels and prints a statistical report of the word and character usage found within. The learning goals are to:
 
-- Configure a professional Python development environment on your local computer
+- Configure a professional Python development environment on local computer
 - Practice building a full project from scratch
-- Deploy a Python project on your personal GitHub account
+- Deploy a Python project on personal GitHub account
 - Learn how to use a professional code editor (Zed)
 
 For more, see [Boot.dev Achievements](https://github.com/lev2pr0/bootdotdevAchievements)
